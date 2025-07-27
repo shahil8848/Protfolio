@@ -94,7 +94,7 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
         </div>
         
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" class="btn"><span>Resume</span>
+            <a href="https://drive.google.com/file/d/1NhQLYTEVOFLkQohOIu9H-Nb56lroQAHv/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -310,34 +310,49 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
   <div class="container">
     <div class="content">
       <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
+        <img draggable="false" src="./assets/images/contact1.png" alt="Contact Image">
       </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
+      <form id="contact-form">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required />
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" required />
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="tel" name="phone" placeholder="Phone" />
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
         </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
+        <!-- Message display div -->
+<div
+  id="form-message"
+  style="
+    display: none;
+    padding: 12px 16px;
+    margin-top: 12px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  "
+></div>
+
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa fa-paper-plane"></i>
+          </button>
         </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </div>
 </section>
 <!-- contact section ends -->
@@ -412,6 +427,15 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
     ></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("smBJ4RwF7XpI1Y7u5"); 
+  })();
+</script>
+
+<script src="./assets/js/contact.js"></script>
+
 
 <script src="./assets/js/script.js"></script>
 

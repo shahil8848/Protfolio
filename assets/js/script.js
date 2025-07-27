@@ -60,11 +60,11 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | Shahil Bhusal";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            $("#favicon").attr("href", "assets/images/logo.png");
         }
         else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            document.title = "The journey continues elsewhere...";
+            $("#favicon").attr("href", "assets/images/cmsoon.png");
         }
     });
 

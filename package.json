@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-website-main",
+  "version": "1.0.0",
+  "description": "![Portfolio Screenshot](./screenshot/portfolio.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahil8848/Protfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shahil8848/Protfolio/issues"
+  },
+  "homepage": "https://github.com/shahil8848/Protfolio#readme",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5"
+  }
+}
