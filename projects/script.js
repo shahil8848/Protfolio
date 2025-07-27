@@ -1,97 +1,88 @@
 $(document).ready(function () {
 
+    // Menu toggle for mobile hamburger
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
     });
 
+    // On scroll or load, reset menu and toggle scroll-top button
     $(window).on('scroll load', function () {
         $('#menu').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
         if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
+            $('#scroll-top').addClass('active');
         } else {
-            document.querySelector('#scroll-top').classList.remove('active');
+            $('#scroll-top').removeClass('active');
         }
     });
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Shahil Bhusal";
-            $("#favicon").attr("href", "/assets/images/logo.png");
-        }
-        else {
-            document.title = "The journey continues";
-            $("#favicon").attr("href", "/assets/images/cmsoon.png");
-        }
-    });
+// Change title and favicon on tab visibility change
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === "visible") {
+        document.title = "Projects | Portfolio Shahil Bhusal";
+        $("#favicon").attr("href", "/assets/images/logo.png");
+    } else {
+        document.title = "The journey continues";
+        $("#favicon").attr("href", "/assets/images/cmsoon.png");
+    }
+});
 
-
-// fetch projects start
+// Fetch projects JSON data
 function getProjects() {
     return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
-        });
+        .then(response => response.json());
 }
 
-
+// Render projects and initialize Isotope and VanillaTilt
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
+
     projects.forEach(project => {
         projectsHTML += `
         <div class="grid-item">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          <div class="box tilt">
+            <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+            <div class="content">
+              <div class="tag">
+                <h3>${project.name}</h3>
+              </div>
+              <div class="desc">
+                <p>${project.desc}</p>
+                <div class="btns">
+                  <a href="${project.links.view}" class="btn" target="_blank">
+                    <i class="fas fa-eye"></i> View
+                  </a>
+                  <a href="${project.links.code}" class="btn" target="_blank">
+                    Code <i class="fas fa-code"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    </div>`
+        </div>`;
     });
+
     projectsContainer.innerHTML = projectsHTML;
 
-    // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
-    // // vanilla tilt.js  
-
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
-
-    // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
-
-    // isotope filter products
-    var $grid = $('.box-container').isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows',
-        masonry: {
-            columnWidth: 200
-        }
+    // Initialize VanillaTilt
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
     });
 
-    // filter items on button click
+    // Initialize Isotope
+    var $grid = $('.box-container').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
+
+    // Filter buttons (if any)
     $('.button-group').on('click', 'button', function () {
         $('.button-group').find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
@@ -100,28 +91,26 @@ function showProjects(projects) {
     });
 }
 
+// Call fetch and render projects
 getProjects().then(data => {
     showProjects(data);
-})
-// fetch projects end
+});
 
-
-
-// disable developer mode
+// Disable developer mode keys
 document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
+    if (e.keyCode === 123) { // F12
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) {
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) {
         return false;
     }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    if (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) {
         return false;
     }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    if (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) {
         return false;
     }
-}
+};
