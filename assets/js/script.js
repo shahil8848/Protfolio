@@ -63,7 +63,7 @@ document.addEventListener('visibilitychange',
             $("#favicon").attr("href", "assets/images/logo.png");
         }
         else {
-            document.title = "The journey continues elsewhere...";
+            document.title = "The journey continues";
             $("#favicon").attr("href", "assets/images/cmsoon.png");
         }
     });
