@@ -464,3 +464,8 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+@media (max-width: 768px) {
+  .viewall {
+    display: none;
+  }
+}
