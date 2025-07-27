@@ -2,6 +2,8 @@
 
 ![Portfolio Screenshot](./screenshot/portfolio.png)
 
+live demo:https://myportfolio37.vercel.app/
+
 This is the personal portfolio website of **Shahil Bhusal**. It showcases my skills, education, experience, and projects through a clean, responsive, and user-friendly interface.
 
 ---
