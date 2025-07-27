@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Beauty Commerce",
+    "desc": "A cosmetic eCommerce website built with a beautiful UI and basic shopping functionality.",
+    "image": "beauty",
+    "links": {
+      "view": "",
+      "code": "https://github.com/shahil8848/Minor-Project-6th-semester-.git"
+    }
+  },
+  {
+    "name": "GreenBasket Starter",
+    "desc": "Sustainable shopping eCommerce starter built with modern tech stack and clean UI.",
+    "image": "start",
+    "links": {
+      "view": "https://green-basket-mauve.vercel.app/",
+      "code": "https://github.com/shahil8848/Greenbasket.git"
+    }
+  },
+  {
+    "name": "GreenBasket Final",
+    "desc": "Final version of GreenBasket eCommerce project featuring order flow, admin panel, and clerk authentication.",
+    "image": "final",
+    "links": {
+      "view": "https://greenbasket37.vercel.app/",
+      "code": "https://github.com/shahil8848/GreenBasket-Style-1-.git"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal portfolio built using HTML, CSS, JS showcasing projects and skills with animations.",
+    "image": "portfolio",
+    "links": {
+      "view": "https://portfolio37.vercel.app/",
+      "code": "https://github.com/shahil8848/Protfolio.git"
+    }
+  },
+  {
+    "name": "Coming Soon",
+    "desc": "This project is under development and will be added soon with complete details.",
+    "image": "comingsoonstay",
+    "links": {
+      "view": "",
+      "code": ""
+    }
+  }
+]
