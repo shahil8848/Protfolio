@@ -9,16 +9,34 @@
     }
   },
   {
-    "name": "GreenBasket Starter",
-    "desc": "Sustainable shopping eCommerce starter built with modern tech stack and clean UI.",
-    "image": "start",
+    "name": "GreenBasket esewa integration",
+    "desc": "Eco-friendly store with eSewa payments.",
+    "image": "esewapaymentconfirmation",
     "links": {
-      "view": "https://green-basket-mauve.vercel.app/",
-      "code": "https://github.com/shahil8848/Greenbasket.git"
+      "view": "https://greenbasket-esewa.vercel.app/",
+      "code": "https://github.com/shahil8848/GreenBasket-Esewa-Integration-Nextjs-Project-.git"
+    }
+  },
+   {
+    "name": "GreenBasket esewa and stripe integration ",
+    "desc": "Sustainable shop with eSewa & Stripe.",
+    "image": "stripe",
+    "links": {
+      "view": "https://green-basket-esewa-and-stripe.vercel.app/",
+      "code": "https://github.com/shahil8848/GreenBasket-stripe-and-esewa-integration.git"
+    }
+  },
+   {
+    "name": "Quick cart",
+    "desc": "Fast and clean eCommerce cart.",
+    "image": "quick",
+    "links": {
+      "view": "",
+      "code": "https://github.com/shahil8848/Quickcart-.git"
     }
   },
   {
-    "name": "GreenBasket Final",
+    "name": "GreenBasket simple next js ",
     "desc": "Final version of GreenBasket eCommerce project featuring order flow, admin panel, and clerk authentication.",
     "image": "final",
     "links": {

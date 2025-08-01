@@ -9,7 +9,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/cmsoon.png" type="image/x-png">
+    <link id='favicon' rel="shortcut icon" href="" type="">
     <title>Portfolio | Shahil Bhusal</title>
 </head>
 <!-- <body oncontextmenu="return false"> -->
@@ -67,42 +67,74 @@
 
 <!-- about section starts -->
 <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+  
+  <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
+      <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="Shahil Bhusal Profile Picture">
     </div>
+    
     <div class="content">
-        <h3>I'm Shahil Bhusal</h3>
-        <span class="tag">Aspiring Backend Developer</span>
-        
-        <p>I am an aspiring Backend Developer based in Butwal, Nepal.
-I have completed my Bachelor's degree in Computer Information System (BCIS) from Crimson College of Technology, affiliated with Pokhara University. I recently began my journey in backend development with Python, and I'm passionate about learning how systems work behind the scenes.
-Currently, I am exploring Python frameworks like Django and Flask, and building hands-on projects to sharpen my skills. I enjoy solving problems, writing clean code, and continuously improving as a developer. </p>
-        
-        <div class="box-container">
-            <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
-            <div class="box">
-              <p><span> email : </span> shahil.bhusal369@gmail.com</p>
-              <p><span> place : </span> Butwal-7, Nepal</p>
-            </div>
+      <h3>I'm Shahil Bhusal</h3>
+      <span class="tag">Aspiring Backend Developer</span>
+      
+      <p>
+        I am an aspiring Backend Developer based in Butwal, Nepal.
+        I have completed my Bachelor's degree in Computer Information System (BCIS) from Crimson College of Technology, affiliated with Pokhara University. I recently began my journey in backend development with Python, and I'm passionate about learning how systems work behind the scenes.
+        Currently, I am exploring Python frameworks like Django and Flask, and building hands-on projects to sharpen my skills. I enjoy solving problems, writing clean code, and continuously improving as a developer.
+      </p>
+      
+      <div class="box-container">
+        <!-- <div class="box">
+          <p><span> age: </span> 20</p>
+          <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+        </div> -->
+        <div class="box">
+          <p><span> email : </span> shahil.bhusal369@gmail.com</p>
+          <p><span> place : </span> Butwal-7, Nepal</p>
         </div>
+      </div>
+      
+      <div class="resumebtn" style="margin-top: 20px; display: flex; gap: 16px;">
         
-        <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1NhQLYTEVOFLkQohOIu9H-Nb56lroQAHv/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
+        <!-- View Resume button -->
+        <a href="/assets/Shahil Bhusal cv.pdf" target="_blank" class="btn" 
+           style="
+             flex: 1;
+             text-align: center;
+             padding: 12px 0;
+             font-weight: 600;
+             font-size: 1.1rem;
+             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+             color: white;
+             border-radius: 8px;
+             text-decoration: none;
+             box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+             transition: background 0.3s ease, box-shadow 0.3s ease;
+           "
+           onmouseover="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 6px 20px rgba(106, 17, 203, 0.6)';"
+           onmouseout="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 4px 15px rgba(37, 117, 252, 0.4)';"
+        >
+          View Resume(local) <i class="fas fa-eye"></i>
+        </a>
+        
+        <!-- Download Resume button -->
+       <a href="https://drive.google.com/file/d/1NhQLYTEVOFLkQohOIu9H-Nb56lroQAHv/view?usp=drive_link" 
+     target="_blank" class="btn"
+     style="flex: 1; text-align: center; padding: 12px 0; font-weight: 600; font-size: 1.1rem; background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%); color: white; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4); transition: background 0.3s ease, box-shadow 0.3s ease;"
+     onmouseover="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 6px 20px rgba(37, 117, 252, 0.6)';"
+     onmouseout="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 4px 15px rgba(106, 17, 203, 0.4)';">
+    View Resume(Drive) <i class="fas fa-eye"></i>
+  </a>
+
+      </div>
 
     </div>
-    </div>
+  </div>
 </section>
 <!-- about section ends -->
+
 
 <!-- skills section starts -->
 <section class="skills" id="skills">
@@ -206,7 +238,9 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
         <div class="desc">
           <h3>Frontend Developer | Internship</h3>
           <p>September 10, 2024 – December 27, 2024</p>
-          <a href="https://drive.google.com/file/d/1Cji_bj9BIOQy0gRXqLwp1Njq0TGPYeqe/view?usp=drive_link" target="_blank" 
+
+          <!-- Google Drive Certificate -->
+          <a href="https://drive.google.com/file/d/1Cji_bj9BIOQy0gRXqLwp1Njq0TGPYeqe/view?usp=drive_link" target="_blank"
              style="
                 display: inline-block;
                 margin-top: 12px;
@@ -223,8 +257,31 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
              onmouseover="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 6px 20px rgba(106, 17, 203, 0.6)';"
              onmouseout="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 4px 15px rgba(37, 117, 252, 0.4)';"
           >
-            View Certificate <i class="fas fa-file-pdf"></i>
+            View Certificate(Drive) <i class="fas fa-file-pdf"></i>
           </a>
+
+          <!-- Local official document -->
+          <a href="/experience/Shahil Front-end internship.pdf" target="_blank"
+             style="
+                display: inline-block;
+                margin-top: 12px;
+                margin-left: 12px;
+                padding: 12px 28px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+                color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+                transition: background 0.3s ease, box-shadow 0.3s ease;
+             "
+             onmouseover="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 6px 20px rgba(37, 117, 252, 0.6)';"
+             onmouseout="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 4px 15px rgba(106, 17, 203, 0.4)';"
+          >
+            View Certificate(local) <i class="fas fa-file-alt"></i>
+          </a>
+
         </div>
       </div>
     </div>
@@ -238,7 +295,9 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
         <div class="desc">
           <h3>Python Backend Developer | Internship</h3>
           <p>April 20, 2025 – July 25, 2025</p>
-          <a href="https://drive.google.com/file/d/1hRuDEZIFR1zRard-wUCvD6bHwUuYfyiW/view?usp=drive_link" target="_blank" 
+
+          <!-- Google Drive Certificate -->
+          <a href="https://drive.google.com/file/d/1hRuDEZIFR1zRard-wUCvD6bHwUuYfyiW/view?usp=drive_link" target="_blank"
              style="
                 display: inline-block;
                 margin-top: 12px;
@@ -255,8 +314,31 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
              onmouseover="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 6px 20px rgba(106, 17, 203, 0.6)';"
              onmouseout="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 4px 15px rgba(37, 117, 252, 0.4)';"
           >
-            View Certificate <i class="fas fa-file-pdf"></i>
+            View Certificate(Drive)<i class="fas fa-file-pdf"></i>
           </a>
+
+          <!-- Local official document -->
+          <a href="/experience/Shahil Python internship.pdf" target="_blank"
+             style="
+                display: inline-block;
+                margin-top: 12px;
+                margin-left: 12px;
+                padding: 12px 28px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+                color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+                transition: background 0.3s ease, box-shadow 0.3s ease;
+             "
+             onmouseover="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 6px 20px rgba(37, 117, 252, 0.6)';"
+             onmouseout="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 4px 15px rgba(106, 17, 203, 0.4)';"
+          >
+            View Certificate(local) <i class="fas fa-file-alt"></i>
+          </a>
+
         </div>
       </div>
     </div>
@@ -275,50 +357,30 @@ Currently, I am exploring Python frameworks like Django and Flask, and building 
     </div>
 
   </div>
-    <div class="stacking-message" style="
-    margin-top: 40px;
-    padding: 18px 32px;
-    font-size: 1.4rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #fff;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(37, 117, 252, 0.5);
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    user-select: none;
-    transition: background 0.4s ease;
-    cursor: default;
-">
-  Experience is <span style="color: #ffd700;">stacking up</span>, <br> stay tuned for more!
-</div>
 
-
-  <!-- <div class="morebtn" style="margin-top: 30px;">
-    <a href="/experience" class="btn" style="
-        display: inline-block;
-        padding: 12px 28px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-        color: #fff;
-        border-radius: 8px;
-        text-decoration: none;
-        box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
-        transition: background 0.3s ease, box-shadow 0.3s ease;
-    "
-    onmouseover="this.style.background='linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)'; this.style.boxShadow='0 6px 20px rgba(106, 17, 203, 0.6)';"
-    onmouseout="this.style.background='linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)'; this.style.boxShadow='0 4px 15px rgba(37, 117, 252, 0.4)';"
-    >
-      <span>View All</span> <i class="fas fa-arrow-right"></i>
-    </a>
-  </div> -->
+  <div class="stacking-message"
+       style="
+         margin-top: 40px;
+         padding: 18px 32px;
+         font-size: 1.4rem;
+         font-weight: 700;
+         background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+         color: #fff;
+         border-radius: 12px;
+         text-align: center;
+         box-shadow: 0 6px 20px rgba(37, 117, 252, 0.5);
+         font-family: 'Poppins', sans-serif;
+         letter-spacing: 0.05em;
+         text-transform: uppercase;
+         user-select: none;
+         transition: background 0.4s ease;
+         cursor: default;
+       ">
+    Experience is <span style="color: #ffd700;">stacking up</span>, <br> stay tuned for more!
+  </div>
 
 </section>
 <!-- experience section ends -->
-
 
 
 
